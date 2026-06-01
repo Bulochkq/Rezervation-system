@@ -1,35 +1,32 @@
-# Velocity Bike & Ski Service Reservation Page
+# Velocity Bike Service Booking Portal
 
-A high-performance, mobile-responsive service landing page designed for **Velocity Servis / PRO CYCLING** in Bratislava, Slovakia. Engineered for seamless integration into enterprise content management systems (such as OrchidCore CMS), with a strong focus on Local SEO optimization, performant asset delivery, and cross-device accessibility.
+A high-performance, SEO-optimized service landing page interface designed for **Velocity Servis / PRO CYCLING** in Bratislava, Slovakia. Engineered for seamless integration into enterprise content management systems (such as OrchidCore CMS), with a strong focus on Local SEO, web performance, and mobile accessibility.
 
 ---
 
-## 🛠️ Technical Architecture & Features
+## 🛠️ Technical Highlights & Features
 
-### 1. Local SEO & Structured Data (JSON-LD)
-* Implements a consolidated **Schema.org JSON-LD graph** (`BicycleStore` type) for both primary branches:
-  * **Petržalka** (Medveďovej 1/A)
-  * **Lamač** (Lamačská cesta 8/A)
-* Configured with precise geo-coordinates, localized operating hours, unique `@id` anchors, and direct links to Google Maps. This ensures rich snippet rendering and optimal indexability in Google Maps and local search queries.
+### 1. Advanced Local SEO & Structured Data (JSON-LD)
+* **Schema.org Integration**: Implements a structured **JSON-LD graph** (`BicycleStore` schema) covering both primary service centers:
+  * **Petržalka Branch** (Medveďovej 1/A)
+  * **Lamač Branch** (Lamačská cesta 8/A)
+* **Rich Snippets Optimization**: Configured with precise coordinates, telephone endpoints, localized operating hours, prices, and same-as social profile anchors to maximize indexing quality in Google Maps and local search engine queries.
+* **Invisible Image Wrapper**: Uses modern CSS clipping (`clip: rect(0,0,0,0); position: absolute;`) instead of `display: none` to ensure search engine crawler bots read and index key background image alt-texts without layout shifting or triggering hidden content flags.
 
-### 2. Search Engine Optimization (SEO) & Indexability
-* **Invisible Image Wrapper**: Avoids the standard `display: none;` property (which can trigger search engine hidden content flags). Uses a modern clipping pattern (`clip: rect(0,0,0,0); position: absolute;`) to allow crawlers to read and index background image `alt` texts without impacting the visual layout.
-* **Open Graph Protocol**: Structured `og:image` tags linking to high-quality banners to provide clean, engaging link previews in messaging applications (Viber, Telegram, WhatsApp) and social networks.
+### 2. Performance-Driven Iframe Integration
+* **Deferred Lazy Loading**: external booking calendars from branch subdomains (`servis.procycling.sk` and `servis.velocity.sk`) are injected dynamically only when the booking modal is triggered.
+* **Web Vitals Optimization**: Prevents heavy widget files from slowing down the initial page render, boosting LCP (Largest Contentful Paint) and TBT (Total Blocking Time) scores.
 
-### 3. Dynamic Booking & Performance Optimization
-* **Deferred Iframe Injection**: The reservation system dynamically embeds external booking widgets from branch subdomains (`servis.procycling.sk` and `servis.velocity.sk`) on demand. 
-* By loading iframe `src` attributes only when the user opens the modal, the initial page load speed is significantly increased, boosting Core Web Vitals (specifically LCP and FID).
-
-### 4. Interface & Layout Design
-* Built using **Semantic HTML5** and customized **CSS Flexbox / Grid** configurations.
-* Employs standard vanilla CSS variables and embedded layout blocks to ensure full compatibility inside restrictive CMS text blocks.
-* Designed with micro-animations (e.g., hover offsets, interactive modal closures) to elevate the user experience.
-* Multilingual support indicators for Slovak, English, German, and Ukrainian.
+### 3. Responsive UX & Viewport Management
+* **Mobile Viewport Fix**: Built a custom modal viewport wrapper targeting mobile screens (`max-width: 991px`) using dynamic viewport heights (`100dvh` / `height: 100%`) and top-aligned spacing. This guarantees the modal header and close target never slide under mobile browser chrome or native address bars (e.g. on iOS Safari).
+* **Maximized Calendar Workspace**: Dynamically strips down horizontal paddings, card borders, and shadows on small viewports so the iframe booking calendars stretch to 100% of the mobile screen width, giving users maximum interactable space.
+* **Accessibility Standards**: Enhanced touch-target sizing for closing targets (`44px` minimum) and isolated hover transition states to `@media (hover: hover)` to eliminate sticky touch highlighting on handheld devices.
 
 ---
 
 ## 💻 Tech Stack
-* **Markup**: HTML5 (Semantic elements)
-* **Styling**: CSS3 (Vanilla, responsive layout grids, responsive design tokens)
-* **Logic**: Vanilla JavaScript (dynamic modal control, keyboard listener for Esc, lazy iframe injection)
-* **SEO**: JSON-LD Structured Data, Open Graph Protocol
+
+* **Markup**: Semantic HTML5
+* **Styles**: Modern CSS3 (Grid Layouts, Flexbox, Dynamic Viewport Units, Media Queries)
+* **Scripting**: Vanilla ES6 JavaScript (State controllers, lazy loaders, keyboard event listeners)
+* **SEO**: JSON-LD Microdata schema graphs, Open Graph metadata profiles
