@@ -1,49 +1,35 @@
 # Velocity Bike & Ski Service Reservation Page
 
-A custom, fully responsive service landing page built with HTML and inline CSS, designed for integration into the **OrchidCore CMS** for **Velocity Servis / PRO CYCLING** in Bratislava, Slovakia.
-
-This repository contains the landing page code optimized for Local SEO, indexing, and mobile responsiveness.
+A high-performance, mobile-responsive service landing page designed for **Velocity Servis / PRO CYCLING** in Bratislava, Slovakia. Engineered for seamless integration into enterprise content management systems (such as OrchidCore CMS), with a strong focus on Local SEO optimization, performant asset delivery, and cross-device accessibility.
 
 ---
 
-## 🛠️ Features
+## 🛠️ Technical Architecture & Features
 
-1. **Local SEO & Structured Data**:
-   * Pre-configured **JSON-LD Schema** (`BicycleStore` graph) for both branches: **Petržalka** (Medveďovej 1/A) and **Lamač** (Lamačská cesta 8/A).
-   * Schema contains precise geotags, contact numbers, and opening hours for optimal local search rendering (Google Maps).
-2. **Open Graph Integration**:
-   * Pre-configured `og:image` meta tag pointing to the absolute header banner URL to ensure beautiful link previews in messengers (Viber, Telegram, WhatsApp) and social networks.
-3. **Optimized Asset Indexing**:
-   * Invisible `<img>` tags wrapper with visually hidden CSS utility attributes replacing standard `display: none;`. This ensures background image `alt` texts are indexed by Googlebot without triggering hidden content flags.
-4. **Interactive Online Booking**:
-   * Responsive modal reservation popup window.
-   * Dynamically loads separate online booking forms for Lamač and Petržalka branches from external subdomains (`servis.procycling.sk` & `servis.velocity.sk`) only when opened, improving initial page load time.
-5. **Modern Layout & Design**:
-   * Clean red-white brand colors matching PRO CYCLING identity.
-   * Built using custom Flexbox and CSS Grid layout blocks.
-   * 100% mobile-friendly and responsive.
+### 1. Local SEO & Structured Data (JSON-LD)
+* Implements a consolidated **Schema.org JSON-LD graph** (`BicycleStore` type) for both primary branches:
+  * **Petržalka** (Medveďovej 1/A)
+  * **Lamač** (Lamačská cesta 8/A)
+* Configured with precise geo-coordinates, localized operating hours, unique `@id` anchors, and direct links to Google Maps. This ensures rich snippet rendering and optimal indexability in Google Maps and local search queries.
 
----
+### 2. Search Engine Optimization (SEO) & Indexability
+* **Invisible Image Wrapper**: Avoids the standard `display: none;` property (which can trigger search engine hidden content flags). Uses a modern clipping pattern (`clip: rect(0,0,0,0); position: absolute;`) to allow crawlers to read and index background image `alt` texts without impacting the visual layout.
+* **Open Graph Protocol**: Structured `og:image` tags linking to high-quality banners to provide clean, engaging link previews in messaging applications (Viber, Telegram, WhatsApp) and social networks.
 
-## 📁 Repository Structure
+### 3. Dynamic Booking & Performance Optimization
+* **Deferred Iframe Injection**: The reservation system dynamically embeds external booking widgets from branch subdomains (`servis.procycling.sk` and `servis.velocity.sk`) on demand. 
+* By loading iframe `src` attributes only when the user opens the modal, the initial page load speed is significantly increased, boosting Core Web Vitals (specifically LCP and FID).
 
-* `index.html`: The source code containing structured data, service catalog, price lists, guides, map locations, and modal reservation frames. This is the exact code block to paste into your CMS text/HTML editor.
-* `README.md`: This file.
+### 4. Interface & Layout Design
+* Built using **Semantic HTML5** and customized **CSS Flexbox / Grid** configurations.
+* Employs standard vanilla CSS variables and embedded layout blocks to ensure full compatibility inside restrictive CMS text blocks.
+* Designed with micro-animations (e.g., hover offsets, interactive modal closures) to elevate the user experience.
+* Multilingual support indicators for Slovak, English, German, and Ukrainian.
 
 ---
 
-## 🚀 How to Integrate into CMS (OrchidCore / Shoptet / WordPress)
-
-To deploy or update this page on your e-shop website:
-
-1. Open `index.html` and copy its entire content.
-2. Log in to your e-shop administration panel.
-3. Navigate to the **Web Pages / Sections** manager and select the **Servis** page.
-4. Toggle the text editor to **HTML view (source code)**.
-5. Paste the copied code and save the changes.
-
-### ⚠️ Critical SEO Settings inside CMS Admin Panel
-Make sure to configure the page settings in your CMS panel as follows to avoid SEO bugs:
-* **Page Title**: `Servis bicyklov Bratislava – profesionálny cykloservis pre každý typ bicykla`
-* **Meta Description**: `Profesionálny servis bicyklov a elektrobicyklov všetkých značiek v Bratislave. Rýchla diagnostika, výhodné balíčky a spoľahlivý zákaznícky servis.`
-* **og:image**: Upload or select the image `https://www.procycling.sk/uploads/image_bank/img-4332.jpg`.
+## 💻 Tech Stack
+* **Markup**: HTML5 (Semantic elements)
+* **Styling**: CSS3 (Vanilla, responsive layout grids, responsive design tokens)
+* **Logic**: Vanilla JavaScript (dynamic modal control, keyboard listener for Esc, lazy iframe injection)
+* **SEO**: JSON-LD Structured Data, Open Graph Protocol
