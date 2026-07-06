@@ -1,12 +1,13 @@
 <div lang="sk">
 <meta property="og:image" content="https://www.procycling.sk/uploads/image_bank/cis-9314.jpg" />
-<script type="application/ld+json">// <![CDATA[
-{
+<script>// <![CDATA[
+(function () {
+var velServisSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "BicycleStore",
-      "@id": "https://www.procycling.sk/sekcia/servis-bicyklov-bratislava/#petrzalka",
+      "@id": "https://www.procycling.sk/sekcia/servis-bicyklov/#petrzalka",
       "name": "Velocity Servis Petržalka – Servis bicyklov a elektrobicyklov",
       "image": [
         "https://www.procycling.sk/images/velocity-servis-logo.png",
@@ -14,7 +15,7 @@
         "https://www.procycling.sk/uploads/image_bank/snimka-obrazovky-2026-05-08-183308.png"
       ],
       "logo": "https://www.procycling.sk/images/velocity-servis-logo.png",
-      "url": "https://www.procycling.sk/sekcia/servis-bicyklov-bratislava/",
+      "url": "https://www.procycling.sk/sekcia/servis-bicyklov/",
       "telephone": "+421917344484",
       "priceRange": "€€",
       "address": {
@@ -39,21 +40,21 @@
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/procyclingsk",
-        "https://maps.app.goo.gl/Czi3X4quc3b4jX8B7"
+        "https://www.facebook.com/procyclingsk"
       ],
+      "hasMap": "https://maps.app.goo.gl/Czi3X4quc3b4jX8B7",
       "description": "Velocity Servis – profesionálny servis bicyklov a elektrobicyklov v Bratislave – Petržalka. Servis Shimano, SRAM, Manitou, Bosch, Mahle, Campagnolo. Voskovanie reťazí, umývanie bicyklov, servis kolies a bŕzd, diagnostika a opravy odpruženia."
     },
     {
       "@type": "BicycleStore",
-      "@id": "https://www.procycling.sk/sekcia/servis-bicyklov-bratislava/#westend",
+      "@id": "https://www.procycling.sk/sekcia/servis-bicyklov/#westend",
       "name": "Velocity Servis WESTEND – Servis bicyklov a elektrobicyklov",
       "image": [
         "https://www.procycling.sk/images/velocity-servis-logo.png",
         "https://www.procycling.sk/uploads/image_bank/cis-9127.jpg"
       ],
       "logo": "https://www.procycling.sk/images/velocity-servis-logo.png",
-      "url": "https://www.procycling.sk/sekcia/servis-bicyklov-bratislava/",
+      "url": "https://www.procycling.sk/sekcia/servis-bicyklov/",
       "telephone": "+421917344484",
       "priceRange": "€€",
       "address": {
@@ -65,8 +66,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 48.16969525921655,
-        "longitude": 17.07300957065236
+        "latitude": 48.1694874,
+        "longitude": 17.0731062
       },
       "areaServed": "Bratislava",
       "openingHoursSpecification": [
@@ -84,13 +85,18 @@
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/procyclingsk",
-        "https://maps.app.goo.gl/goiYpc4C3Gp2JPTu7"
+        "https://www.facebook.com/procyclingsk"
       ],
+      "hasMap": "https://maps.app.goo.gl/rP2jGH6Y4DsNd4ED7",
       "description": "Velocity Servis – profesionálny servis bicyklov a elektrobicyklov v Bratislave – Westend. Servis Shimano, SRAM, Manitou, Bosch, Mahle, Campagnolo. Voskovanie reťazí, umývanie bicyklov, servis kolies a bŕzd, diagnostika a opravy odpruženia."
     }
   ]
-}
+};
+var velSchemaTag = document.createElement('script');
+velSchemaTag.type = 'application/ld+json';
+velSchemaTag.text = JSON.stringify(velServisSchema);
+document.head.appendChild(velSchemaTag);
+})();
 // ]]></script>
 <div style="max-width: 1200px; margin: 0 auto; color: #2c3e50;">
 <div style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/uploads/image_bank/cis-9314.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 0; margin-bottom: 40px; box-shadow: 5px 5px 0 rgba(0,0,0,0.2);"><img src="/uploads/image_bank/cis-9314.jpg" alt="Velocity Servis – profesionálny servis bicyklov a elektrobicyklov Bratislava" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;" />
@@ -220,7 +226,7 @@
 <div style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/uploads/image_bank/cis-9127.jpg'); background-size: cover; background-position: center; padding: 30px 20px; text-align: center; box-shadow: 5px 5px 0 rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 0;"><img src="/uploads/image_bank/cis-9127.jpg" alt="Velocity Servis WESTEND - Lamačská cesta 3B, Westend plazza" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;" />
 <h3 style="margin: 0 0 10px; color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Velocity Servis WESTEND</h3>
 <p style="margin: 0; color: #ddd;">Lamačská cesta 3B, Westend plazza<br />Bratislava</p>
-<a href="https://maps.app.goo.gl/goiYpc4C3Gp2JPTu7" target="_blank" rel="noopener" style="display: inline-block; background: #b30000; color: #fff; text-decoration: none; padding: 12px 25px; margin-top: 20px; font-weight: bold; text-transform: uppercase; box-shadow: 4px 4px 0 rgba(0,0,0,0.4); transition: transform 0.2s; border-radius: 0;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'"> Zobraziť na mape </a></div>
+<a href="https://maps.app.goo.gl/rP2jGH6Y4DsNd4ED7" target="_blank" rel="noopener" style="display: inline-block; background: #b30000; color: #fff; text-decoration: none; padding: 12px 25px; margin-top: 20px; font-weight: bold; text-transform: uppercase; box-shadow: 4px 4px 0 rgba(0,0,0,0.4); transition: transform 0.2s; border-radius: 0;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'"> Zobraziť na mape </a></div>
 </div>
 </div>
 <div style="margin-bottom: 60px;">
@@ -310,7 +316,7 @@ document.addEventListener('keydown', function(event) {
 <div id="branch-westend" style="background: #fff; border: 1px solid #ddd; display: flex; flex-direction: column; box-shadow: 0 15px 35px rgba(0,0,0,0.06), 0 5px 15px rgba(0,0,0,0.04); border-radius: 0; overflow: hidden;">
 <div style="padding: 12px 10px; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/uploads/image_bank/cis-9127.jpg'); background-size: cover; background-position: center; color: #fff; text-align: center; border-radius: 0; border-bottom: 2px solid #b30000;">
 <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px; font-weight: 800; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">Velocity Servis WESTEND</h3>
-<h4 style="margin-top: 3px; margin-bottom: 0; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; text-shadow: 1px 1px 5px rgba(0,0,0,0.8); font-size: 12px;"><a href="https://maps.app.goo.gl/goiYpc4C3Gp2JPTu7" target="_blank" rel="noopener" style="color: #fff; text-decoration: underline;">Lamačská cesta 3B, Westend plazza</a></h4>
+<h4 style="margin-top: 3px; margin-bottom: 0; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; text-shadow: 1px 1px 5px rgba(0,0,0,0.8); font-size: 12px;"><a href="https://maps.app.goo.gl/rP2jGH6Y4DsNd4ED7" target="_blank" rel="noopener" style="color: #fff; text-decoration: underline;">Lamačská cesta 3B, Westend plazza</a></h4>
 </div>
 <iframe data-src="https://servis.velocity.sk/rezervacia/servis/pridat" style="width: 100%; border: none; height: 500px;" frameborder="0"></iframe></div>
 </div>
