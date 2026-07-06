@@ -1,0 +1,9 @@
+fix: update JSON-LD schema type to BikeStore
+
+* Modified the `@type` property in the JSON-LD schema markup from `BicycleStore` to `BikeStore`.
+* Applied this change to both branch locations (Velocity Servis Petržalka and Velocity Servis WESTEND) within `index.html`.
+* This update ensures better compliance and accuracy with standard Schema.org vocabulary for bicycle repair shops, improving SEO data structures compared to the previous version.
+
+* Змінено властивість `@type` у мікророзмітці JSON-LD з `BicycleStore` на `BikeStore`.
+* Цю зміну застосовано для обох локацій філій (Velocity Servis Petržalka та Velocity Servis WESTEND) у файлі `index.html`.
+* Це оновлення забезпечує кращу відповідність та точність стандартному словнику Schema.org для веломайстерень, покращуючи структуру SEO-даних порівняно з попередньою версією.
